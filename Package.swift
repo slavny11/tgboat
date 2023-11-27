@@ -17,14 +17,14 @@ packageDependencies.append(.package(url: "https://github.com/nerzh/telegram-vapo
 targetDependencies.append(.product(name: "TelegramVaporBot", package: "telegram-vapor-bot"))
 
 let package = Package(
-    name: "Telegram-bot-example",
+    name: "tgbot",
     platforms: [
         .macOS(.v12)
     ],
     dependencies: packageDependencies,
     targets: [
         .executableTarget(
-            name: "Telegram-bot-example",
+            name: "tgbot",
             dependencies: targetDependencies
         )
     ]
